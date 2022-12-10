@@ -1,0 +1,10 @@
+import { LogDNABrowserOptions } from './logdna';
+import { LogDNAMethods } from './LogDNAMethods';
+declare let methods: LogDNAMethods;
+declare const config: (ingestionKey: string, opts?: LogDNABrowserOptions) => void;
+declare const init: (ingestionKey: string, opts?: LogDNABrowserOptions) => void;
+declare const getOptions: () => LogDNABrowserOptions;
+declare const isConfigured: () => Boolean;
+declare const isInitiated: () => Boolean;
+declare const isSendingDisabled: () => Boolean;
+export { config, init, getOptions, isSendingDisabled, isConfigured, isInitiated, methods };
